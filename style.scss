@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$color-font: #cccccc;
+$color-font-key: #353535;
+$color-border-key: #e7e7e7;
+$color-white: #fff;
+
+.wrapper {
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    text-align: center;
+    color: $color-font;
+    text-shadow: 1px 1px 2px darken($color-font, 20%);
+    letter-spacing: 0.06em;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.textarea {
+    border-radius: 10px;
+    border: 3px solid $color-font;
+    box-shadow: 5px 5px 5px darken($color-font, 20%);
+    font-size: 24px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    // border: 3px solid $color-font;
+    border: none;
+    // box-shadow: 5px 5px 5px darken($color-font, 20%);
+    gap: 5px;
+}
+
+.keyboard-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    width: 1000px;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.key {
+    width: 60px;
+    height: 45px;
+    color: $color-font-key;
+    background-color: $color-white;
+    border: 2px solid $color-border-key;
+    box-shadow: 1px 1px 5px darken($color-font, 20%);
+    border-radius: 3px;
+    font-size: 24px;
+    text-align: center;
+    padding: 6px;
+    text-transform: lowercase;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(133, 85, 71);
+        color: $color-white;
+        border-color: rgb(133, 85, 71);
+    }
+}
+
+.key-caps {
+    text-transform: uppercase;
+    width: 60px;
+    height: 45px;
+    color: $color-font-key;
+    background-color: $color-white;
+    border: 2px solid $color-border-key;
+    box-shadow: 1px 1px 5px darken($color-font, 20%);
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(133, 85, 71);
+        color: $color-white;
+        border-color: rgb(133, 85, 71);
+    }
+}
+
+.active-key {
+    background-color: rgb(133, 85, 71);
+    color: $color-white;
+    border-color: rgb(133, 85, 71);
+}
+
+.keyEn {
+    width: 60px;
+    height: 45px;
+    color: $color-font-key;
+    background-color: $color-white;
+    border: 2px solid $color-border-key;
+    box-shadow: 1px 1px 5px darken($color-font, 20%);
+    border-radius: 3px;
+    font-size: 24px;
+    text-align: center;
+    padding: 6px;
+    text-transform: lowercase;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(133, 85, 71);
+        color: $color-white;
+        border-color: rgb(133, 85, 71);
+    }
+}
